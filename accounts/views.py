@@ -50,7 +50,7 @@ def registration(request):
 
         if registration_form.is_valid():
             registration_form.save()
-            
+
             user = auth.authenticate(username=request.POST['username'],
                                      password=request.POST['password1'])
 
